@@ -1,0 +1,22 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "Edit";
+
+}
+
+<h1>Edit</h1>
+<form method="post" asp-action="Update" asp-controller="Department" asp-route-id="@Model.Id">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="ManagerName"></label>
+        <input asp-for="ManagerName" class="form-control" />
+        <span asp-validation-for="ManagerName" class="text-danger"></span>
+    </div>
+     
+    <input type="submit" class="btn btn-primary" value="Update" />
+</form>
+

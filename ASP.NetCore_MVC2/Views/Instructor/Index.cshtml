@@ -1,0 +1,72 @@
+﻿@model List<Instructor>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_AdvLayout";
+}
+
+
+<div class="container py-4 mt-5 mb-5">
+    <h1>Show All Instructor</h1>    
+<a href="/Instructor/New" class="btn btn-success">New Instructor</a>
+@*<form asp-action="Index" asp-controller="Instructor" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>*@
+<table class="table table-bordered table-hover" >
+                <thead>
+                    <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Salary</th>
+                    <th>Image</th>
+                    <th>Department</th>
+                    <th>Course</th>
+                    <th colspan="3">Action(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                      
+                    @if (Model.Count() == 0) 
+                    { 
+                        <tr> <td colspan="3"> Records not found </td></tr >  
+                    } 
+                    else {
+                    @foreach (Instructor item in Model)
+                    {
+					  <tr>
+                     
+                          <td> @item.Id</td>
+                          <td>@item.Name</td>
+                          <td>@item.Address</td>
+                          <td>@item.Salary</td>
+						  <td><img src="/Images/@item.Image" width="150" height="100"></td>
+                          <td>@item.Department.Name</td>
+                          <td>@item.Course.Name</td>
+						  <td>
+                            <a asp-controller="Instructor" asp-action="Details" 
+                            asp-route-id="@item.Id" 
+                            class="btn btn-sm btn-success rounded-0">Show</a>
+                          </td>
+                          <td>
+                            <a asp-controller="Instructor" asp-action="Edit" 
+                            asp-route-id="@item.Id" 
+                            class="btn btn-sm btn-info rounded-0">Edit</a>
+                          </td>
+                          <td>
+                            <a asp-controller="Instructor" asp-action="Delete" 
+                            asp-route-id="@item.Id" 
+                            class="btn btn-sm btn-danger rounded-0">Delete</a>
+                          </td>
+					  </tr>
+                    }
+                   }
+                </tbody>
+            </table>
+
+</div>

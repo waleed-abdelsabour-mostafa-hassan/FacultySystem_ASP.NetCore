@@ -1,0 +1,19 @@
+﻿@model Trainee
+
+<div class="container">
+    <div class="card" style="width:400px">
+
+          <img class="card-img-top" src="/Images/@Model.Image" alt="Card image">
+          <div class="card-body">
+            <h3> @Model.Id</h3>
+            <h4 class="card-title">@Model.Name</h4>
+            <p class="card-text">@Model.Address</p>
+            <p class="card-text">@Model.Grade</p>
+            <a asp-controller="Trainee" asp-action="Index" 
+               class="btn btn-sm btn-primary rounded-0">Back to List
+           </a>
+          </div>
+    
+</div>
+
+</div>

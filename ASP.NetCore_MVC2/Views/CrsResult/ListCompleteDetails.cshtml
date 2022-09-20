@@ -1,0 +1,36 @@
+﻿
+@model List<ResultTraineeCourse>
+
+@{
+    ViewData["Title"] = "ListCompleteDetails";
+}
+
+<h1>ListCompleteDetails</h1>
+
+<div class="container py-4">
+<table class="table table-bordered table-hover" >
+                <thead>
+                    <tr>
+                    <th>ID</th>
+                    <th>CourseName</th>
+                    <th>TraineeName</th>
+                    <th>Degree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                          <td>@item.ResId</td>
+                          <td style="background-color:@item.Color">@item.CrsName</td>
+                          <td>@item.TrainName</td>
+                          <td>@item.ResDeg</td>
+						  
+					  </tr>
+                    }
+					  
+                </tbody>
+            </table>
+
+</div>
+

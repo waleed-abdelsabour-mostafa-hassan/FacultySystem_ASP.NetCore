@@ -1,0 +1,114 @@
+﻿ @model Department
+@{
+    ViewData["Title"] = "New";
+}
+
+<div class="container">
+<h1>New</h1>
+<form method="post" asp-action="SaveNew" asp-controller="Department" >
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="ManagerName"></label>
+        <input asp-for="ManagerName" class="form-control" />
+        <span asp-validation-for="ManagerName" class="text-danger"></span>
+    </div>
+     
+   
+    <input type="submit" class="btn btn-primary" value="Create" />
+</form>
+</div>
+@*<fieldset>
+        <legend>Sample submission</legend>
+        <form method="post" asp-action="SaveNew" asp-controller="Department" >
+        <table id="submissionTable" class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>NameDept</td>
+                    <td>ManagerName</td>
+                </tr>
+            </thead>
+
+            <tr id="tablerow0">
+               
+                <td>
+                    <div class="editor-field">
+                        <input class="text-box single-line" name="Name[0]" type="text" value="" required="required" />
+                    </div>
+                </td>
+                <td>
+                    <div class="editor-field">
+                        <input class="text-box single-line" name="ManagerName[0]" type="text" value="" />
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="removeTr(0);">Delete</button>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+        <p>
+            <button id="add" type="button" class="btn btn-primary">Add</button>
+        </p>
+        <hr />
+
+        <p>
+            <input type="submit" value="Create" id="submit" class="btn btn-default" />
+        </p>
+        </form>
+    </fieldset>
+    </div>
+<script src="~/lib//jquery/dist/jquery.min.js"></script>
+<script>
+    var counter = 1;
+        $(function () {
+            $('#add').click(function () {
+                $('<tr id="tablerow' + counter + '"><td>' +
+                    '<input type="text" class="text-box single-line" name="Name[' + counter + ']" value="" required="required" />' +
+                    '</td>' +
+                    '<td>' +
+                    '<input type="text" class="text-box single-line" name="ManagerName[' + counter + ']" value=""  />' +
+                    '</td>' +
+                    '<td>' +
+                    '<button type="button" class="btn btn-primary" onclick="removeTr(' + counter + ');">Delete</button>' +
+                    '</td>' +
+                    '</tr>').appendTo('#submissionTable');
+                counter++;
+                return false;
+            });
+        });
+        function removeTr(index) {
+            if (counter > 1) {
+                $('#tablerow' + index).remove();
+                counter--;
+            }
+            return false;
+        }
+
+        $("body").on("click", "#submit", function () {
+            //Loop through the Table rows and build a JSON array.
+            var departments = new Array();
+            $("#submissionTable TBODY TR").each(function () {
+                var row = $(this);
+                var department = {};
+                department.Name = row.find("TD").eq(0).html();
+                department.department = row.find("TD").eq(1).html();
+                departments.push(department);
+            });
+ 
+            //Send the JSON array to Controller using AJAX.
+            $.ajax({
+                type: "POST",
+                url: "/Department/SaveNew",
+                data: JSON.stringify(departments),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (r) {
+                    alert(r + " record(s) inserted.");
+                }
+            });
+        });
+</script>*@

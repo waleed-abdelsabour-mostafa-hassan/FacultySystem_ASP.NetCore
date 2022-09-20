@@ -1,0 +1,41 @@
+﻿<!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 display-5 text-uppercase text-primary"><i class="fa fa-truck mr-2"></i>Faster</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            @if (User.Identity.IsAuthenticated == true)
+            {
+                <div class="navbar-nav m-auto py-0">
+                    <a href="/Instructor/Index" class="nav-item nav-link active">Instructors</a>
+                    <a href="/Department/Index" class="nav-item nav-link">Departments</a>
+                    <a href="/Trainee/Index" class="nav-item nav-link">Trainees</a>
+                    <a href="/Course/Index" class="nav-item nav-link">Courses</a>
+                    <a href="/CrsResult/Index" class="nav-item nav-link">CoursesResults</a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a asp-controller="Roles" asp-action="New" class="nav-item nav-link">Add Role</a>
+                    }
+                </div>
+            } 
+            <div class="navbar-nav">
+                 @if(User.Identity.IsAuthenticated==false)
+                {
+                    <a asp-controller="Account" asp-action="Register" class="nav-item nav-link">Register</a>
+                    <a asp-controller="Account" asp-action="Login" class="nav-item nav-link">Login</a>
+                }
+                else
+                {
+                    <a asp-controller="Account" asp-action="Logout" class="nav-item nav-link">Welcome @User.Identity.Name</a>
+                   <a asp-controller="Account" asp-action="Logout" class="nav-item nav-link">Logout</a>
+
+                }
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->

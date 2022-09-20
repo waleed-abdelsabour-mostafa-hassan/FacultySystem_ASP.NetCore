@@ -1,0 +1,33 @@
+﻿@model Course
+@{
+    ViewData["Title"] = "Edit";
+    SelectList DeptLists = new SelectList(ViewBag.DeptList, "Id", "Name");
+
+}
+
+<h1>Edit</h1>
+<form method="post" asp-action="Update" asp-controller="Course" asp-route-id="@Model.Id">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="Degree"></label>
+        <input asp-for="Degree" class="form-control" />
+        <span asp-validation-for="Degree" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="MinDegree"></label>
+        <input asp-for="MinDegree" class="form-control" />
+        <span asp-validation-for="MinDegree" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Dept_Id"></label>
+        <select asp-items="DeptLists" asp-for="Dept_Id" class="form-control">
+        </select>
+        <span asp-validation-for="Dept_Id" class="text-danger"></span>
+     </div>
+    <input type="submit" class="btn btn-primary" value="Update" />
+</form>
+

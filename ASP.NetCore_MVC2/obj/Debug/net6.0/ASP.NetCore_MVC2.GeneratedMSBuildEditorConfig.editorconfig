@@ -1,0 +1,180 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ASP.NetCore_MVC2
+build_property.RootNamespace = ASP.NetCore_MVC2
+build_property.ProjectDir = C:\Users\Waleed\source\repos\ASP.NetCore_MVC2\ASP.NetCore_MVC2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Waleed\source\repos\ASP.NetCore_MVC2\ASP.NetCore_MVC2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Course/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Course/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Course/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Course/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Course/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Course/_CourseCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXF9Db3Vyc2VDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/CrsResult/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JzUmVzdWx0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/CrsResult/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JzUmVzdWx0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/CrsResult/GetCrsResultUsingViewModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JzUmVzdWx0XEdldENyc1Jlc3VsdFVzaW5nVmlld01vZGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/CrsResult/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JzUmVzdWx0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/CrsResult/ListCompleteDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JzUmVzdWx0XExpc3RDb21wbGV0ZURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/CrsResult/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JzUmVzdWx0XE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Department/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Department/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Department/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Department/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Instructor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Instructor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Instructor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Instructor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Instructor/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Instructor/_StudentCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxfU3R1ZGVudENhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Roles/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Shared/_AdvLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZHZMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Trainee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Trainee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Trainee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Trainee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Trainee/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Trainee/_TraineeCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxfVHJhaW5lZUNhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Waleed/source/repos/ASP.NetCore_MVC2/ASP.NetCore_MVC2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-28a6v0kq3l

@@ -1,0 +1,52 @@
+﻿
+@model Course
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Course Details</h1>
+
+    <partial name="_CourseCard" model="Model" />
+
+           <div class="container">
+               <a asp-controller="Course" asp-action="Edit" 
+               asp-route-id="@Model.Id"
+               class="btn btn-sm btn-info rounded-0">Edit
+           </a>
+           </div>
+<hr />
+
+@*<div class="container py-4">  
+    <h4>Instructor Details</h4>  
+    <hr />  
+    <dl class="row">  
+         <dt class="col-sm-2">  
+            @Html.DisplayNameFor(model => model.Image)  
+        </dt>  
+        <dd class="col-sm-10">  
+            @Html.DisplayFor(model => model.Image)  
+        </dd>
+        <dt class="col-sm-2">  
+            @Html.DisplayNameFor(model => model.Name)  
+        </dt>  
+        <dd class="col-sm-10">  
+            @Html.DisplayFor(model => model.Name)  
+        </dd>  
+        <dt class="col-sm-2">  
+            @Html.DisplayNameFor(model => model.Address)  
+        </dt>  
+        <dd class="col-sm-10">  
+            @Html.DisplayFor(model => model.Address)  
+        </dd>  
+        <dt class="col-sm-2">  
+            @Html.DisplayNameFor(model => model.Salary)  
+        </dt>  
+        <dd class="col-sm-10">  
+            @Html.DisplayFor(model => model.Salary)  
+        </dd>  
+    </dl>  
+</div>  
+<div>  
+    <a asp-controller="Home" asp-action="Index" class="btn btn-sm btn-primary rounded-0">Back to List</a>  
+</div>  *@
+

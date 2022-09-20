@@ -1,0 +1,40 @@
+﻿ @model TraineeViewModel
+@{
+    ViewData["Title"] = "New";
+    SelectList DeptLists = new SelectList(ViewBag.DeptList, "Id", "Name");
+}
+
+<div class="container">
+<h1>New</h1>
+
+<form method="post" asp-action="SaveNew" asp-controller="Trainee" enctype="multipart/form-data" >
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="Grade"></label>
+        <input asp-for="Grade" class="form-control" />
+        <span asp-validation-for="Grade" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="Image"></label>
+        <input asp-for="Image" class="form-control" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Dept_Id"></label>
+        <select asp-items="DeptLists" asp-for="Dept_Id" class="form-control">
+            <option value="0">---Select Department---</option>
+        </select>
+        <span asp-validation-for="Dept_Id" class="text-danger"></span>
+        </div>
+    <input type="submit" class="btn btn-primary" value="Create" />
+</form>
+</div>

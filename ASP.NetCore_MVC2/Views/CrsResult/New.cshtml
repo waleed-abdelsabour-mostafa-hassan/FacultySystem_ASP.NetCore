@@ -1,0 +1,61 @@
+﻿ @model CrsResult
+@{
+    ViewData["Title"] = "New";
+    SelectList TrainLists = new SelectList(ViewBag.TrainList, "Id", "Name");
+    SelectList CrsLists = new SelectList(ViewBag.CrsList, "Id", "Name");
+}
+
+<div class="container">
+<h1>New</h1>
+
+<form method="post" asp-action="SaveNew" asp-controller="CrsResult" >
+    <div>
+        <label asp-for="Dept_Id"></label>
+        <select asp-items="TrainLists" asp-for="Dept_Id" class="form-control" onchange="GetCoursesData()">
+            <option value="0">---Select Trainee---</option>
+        </select>
+        <span asp-validation-for="Dept_Id" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Crs_Id"></label>
+        <select   asp-for="Crs_Id" class="form-control">
+            <option value="0">---Select Course---</option>
+        </select>
+        <span asp-validation-for="Crs_Id" class="text-danger"></span>
+    </div>
+
+     <div>
+        <label asp-for="Degree"></label>
+        <input asp-for="Degree" class="form-control" />
+        <span asp-validation-for="Degree" class="text-danger"></span>
+    </div>
+    
+    <input type="submit" class="btn btn-primary" value="Create" />
+</form>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+@*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+<script>
+    function  GetCoursesData()
+    {
+        var TranId=document.getElementById("Dept_Id").value;
+        $.ajax(
+                {
+                    url: "/CrsResult/GetCourses",
+                    data: {"TranId":TranId},
+                    success: function(result)
+                    {
+                        document.getElementById("Crs_Id").innerHTML = "";
+                       console.log(result)
+                     for(let Crs of result)
+                     {
+                         document.getElementById("Crs_Id").innerHTML+= 
+                            "<option value="+Crs.id+">"+Crs.name+"</option>";
+                     }
+                    }
+                }
+            );
+    }
+</script>

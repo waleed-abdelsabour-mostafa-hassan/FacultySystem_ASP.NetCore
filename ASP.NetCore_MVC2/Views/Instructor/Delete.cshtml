@@ -1,0 +1,13 @@
+﻿@model Instructor
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+        <partial name="_StudentCard" model="Model" />
+         <a asp-controller="Instructor" asp-action="ConfirmDelete" 
+          asp-route-id="@Model.Id" 
+               class="btn btn-sm btn-danger rounded-0">Delete
+           </a>
+

@@ -1,0 +1,40 @@
+﻿@model TraineeViewModel
+@{
+    ViewData["Title"] = "Edit";
+    SelectList DeptLists = new SelectList(ViewBag.DeptList, "Id", "Name");
+
+}
+<div class="container">
+<h1>Edit</h1>
+<form method="post" asp-action="Update" asp-controller="Trainee" asp-route-id="@Model.Id" enctype="multipart/form-data">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+     <div>
+        <label asp-for="Grade"></label>
+        <input asp-for="Grade" class="form-control" />
+        <span asp-validation-for="Grade" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Image"></label>
+@*        <input asp-for="Photo" class="form-control" />
+*@        <input asp-for="Image" value="@Model.Photo" type="file" class="form-control" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Dept_Id"></label>
+        <select asp-items="DeptLists" asp-for="Dept_Id" class="form-control">
+            
+        </select>
+        <span asp-validation-for="Dept_Id" class="text-danger"></span>
+     </div>
+    <input type="submit" class="btn btn-primary" value="Update" />
+</form>
+</div>

@@ -1,0 +1,28 @@
+﻿@model CrsResult
+@{
+    ViewData["Title"] = "Edit";
+     SelectList TrainLists = new SelectList(ViewBag.TrainList, "Id", "Name");
+    SelectList CrsLists = new SelectList(ViewBag.CrsList, "Id", "Name");
+
+}
+
+<h1>Edit</h1>
+<form method="post" asp-action="Update" asp-controller="CrsResult" asp-route-id="@Model.Id">
+   <div>
+        <label asp-for="Dept_Id"></label>
+        <select asp-items="TrainLists" asp-for="Dept_Id" class="form-control">
+        </select>
+    </div>
+    <div>
+        <label asp-for="Crs_Id"></label>
+        <select asp-items="CrsLists" asp-for="Crs_Id" class="form-control">
+        </select>
+    </div>
+     <div>
+        <label asp-for="Degree"></label>
+        <input asp-for="Degree" class="form-control" />
+    </div>
+    
+    <input type="submit" class="btn btn-primary" value="Update" />
+</form>
+
